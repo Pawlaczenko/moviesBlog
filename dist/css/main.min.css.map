@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../../themes/blog/sass/main.scss"
+    ],
+    "names": [],
+    "file": "main.min.css"
+}

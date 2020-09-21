@@ -1,0 +1,199 @@
+.cke_editable
+{
+	font-size: 18px;
+	line-height: 1.6;
+
+	/* Fix for missing scrollbars with RTL texts. (#10488) */
+	word-wrap: break-word;
+}
+
+.showPost__content blockquote
+{
+	font-style: italic;
+	font-family: Georgia, Times, "Times New Roman", serif;
+	padding: 2px 0;
+	border-style: solid;
+	border-color: #ccc;
+	border-width: 0;
+}
+
+.cke_contents_ltr blockquote
+{
+	padding-left: 20px;
+	padding-right: 8px;
+	border-left-width: 5px;
+
+	margin: 18px 0;
+}
+
+.cke_contents_ltr blockquote p,
+.cke_contents_ltr blockquote div {
+	margin: 18px 0;
+}
+
+.cke_contents_rtl blockquote
+{
+	padding-left: 8px;
+	padding-right: 20px;
+	border-right-width: 5px;
+}
+
+.showPost__content a
+{
+	color: #0782C1;
+}
+
+.showPost__content ol, .showPost__content ul, .showPost__content dl
+{
+	/* IE7: reset rtl list margin. (#7334) */
+	*margin-right: 0px;
+	/* Preserved spaces for list items with text direction different than the list. (#6249,#8049)*/
+	padding: 0 40px;
+}
+
+.showPost__content h1,
+.showPost__content h2,
+.showPost__content h3,
+.showPost__content h4,
+.showPost__content h5,
+.showPost__content h6
+{
+	font-weight: normal;
+	line-height: 1.2;
+}
+
+.showPost__content hr
+{
+	border: 0px;
+	border-top: 1px solid #ccc;
+}
+
+.showPost__content img.right
+{
+	border: 1px solid #ccc;
+	float: right;
+	margin-left: 15px;
+	padding: 5px;
+}
+
+.showPost__content img.left
+{
+	border: 1px solid #ccc;
+	float: left;
+	margin-right: 15px;
+	padding: 5px;
+}
+
+.showPost__content pre
+{
+	white-space: pre-wrap; /* CSS 2.1 */
+	word-wrap: break-word; /* IE7 */
+	-moz-tab-size: 4;
+	tab-size: 4;
+}
+
+.showPost__content .marker
+{
+	background-color: Yellow;
+}
+
+.showPost__content span[lang]
+{
+	font-style: italic;
+}
+
+.showPost__content figure
+{
+	text-align: center;
+	outline: solid 1px #ccc;
+	background: rgba(0,0,0,0.05);
+	padding: 10px;
+	margin: 10px 20px;
+	display: inline-block;
+}
+
+.showPost__content figure > figcaption
+{
+	text-align: center;
+	display: block; /* For IE8 */
+}
+
+.showPost__content a > img {
+	padding: 1px;
+	margin: 1px;
+	border: none;
+	outline: 1px solid #0782C1;
+}
+
+/* Widget Styles */
+.showPost__content .code-featured
+{
+	border: 5px solid red;
+}
+
+.showPost__content .math-featured
+{
+	padding: 20px;
+	box-shadow: 0 0 2px rgba(200, 0, 0, 1);
+	background-color: rgba(255, 0, 0, 0.05);
+	margin: 10px;
+}
+
+.showPost__content .image-clean
+{
+	border: 0;
+	background: none;
+	padding: 0;
+}
+
+.showPost__content .image-clean > figcaption
+{
+	font-size: .9em;
+	text-align: right;
+}
+
+.showPost__content .image-grayscale
+{
+	background-color: white;
+	color: #666;
+}
+
+.showPost__content .image-grayscale img, img.image-grayscale
+{
+	filter: grayscale(100%);
+}
+
+.showPost__content .embed-240p
+{
+	max-width: 426px;
+	max-height: 240px;
+	margin:0 auto;
+}
+
+.showPost__content .embed-360p
+{
+	max-width: 640px;
+	max-height: 360px;
+	margin:0 auto;
+}
+
+.showPost__content .embed-480p
+{
+	max-width: 854px;
+	max-height: 480px;
+	margin:0 auto;
+}
+
+.showPost__content .embed-720p
+{
+	max-width: 1280px;
+	max-height: 720px;
+	margin:0 auto;
+}
+
+.showPost__content .embed-1080p
+{
+	max-width: 1920px;
+	max-height: 1080px;
+	margin:0 auto;
+}

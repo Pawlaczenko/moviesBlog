@@ -1,0 +1,94 @@
+:root {
+    
+}
+
+$color-primary: #A30000;//#d35656;//#3aafa9;
+$color-primary-dark: rgb(114, 0, 0);
+$color-black: #000000;
+$color-black-light: #17252a;
+$color-black-lighter: #6d6e6e;
+$color-white-light: #FEFFFF;
+$color-white-dark: #DEF2F1;
+
+$wrapper: 15rem;
+
+$header_font: 'Poppins', sans-serif;
+
+$about_background: "../img/back-11.jpg";
+$contact_background: "../img/back-10.jpg";
+$register_background: "../img/back-2.jpg";
+$login_backgroud: "../img/back-1.png";
+$addPost_backgroud: "../img/back-3.jpg";
+
+$bp-largest: 90.625em;  //1450
+$bp-large: 80em; //1200
+$bp-normal: 80em; //1200
+$bp-small: 61em; //1200
+$bp-phone: 59.375em; //900
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; //1rem = 10px; 10px/16px = 62.5%
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 50%;
+    }
+}
+
+body {
+     font-family: 'Roboto', sans-serif;
+     font-weight: 400;
+     line-height: 1.6;
+}
+
+.wrapper {
+    padding: 0 15rem;
+
+    @media only screen and (max-width: $bp-largest) {
+        padding: 0 10rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        padding: 0 5rem;
+    }
+}
+
+@mixin breakpoint($breakpoint) {
+    @if $breakpoint == largestScreen {
+        @media (max-width: $bp-largest) {
+            @content;
+        }
+    }
+    @if $breakpoint == largeScreen {
+        @media (max-width: $bp-large) {
+            @content;
+        }
+    }
+    @if $breakpoint == normalScreen {
+        @media (max-width: $bp-normal) {
+            @content;
+        }
+    }
+    @if $breakpoint == smallScreen {
+        @media (max-width: $bp-small) {
+            @content;
+        }
+    }
+    @if $breakpoint == smallestScreen {
+        @media (max-width: $bp-smallest) {
+            @content;
+        }
+    }
+}
+

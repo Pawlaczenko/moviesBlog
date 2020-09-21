@@ -1,0 +1,22 @@
+<div class="spaceHolder"></div>
+<script>
+
+    let flag = 1;
+    $(document).scroll(function() { 
+        if($(window).scrollTop() === 0) {
+            $('.nav').toggleClass('nav--hidden', 200);
+            $('.nav-wrapper').toggleClass('nav-wrapper--hidden', 200);
+            flag = 1;
+        }
+        if($(window).scrollTop() > 0 && flag) {
+            $('.nav').toggleClass('nav--hidden', 200);
+            $('.nav-wrapper').toggleClass('nav-wrapper--hidden', 200);
+            flag=0;
+        }
+    });
+
+    $('.burger-box').on('click',function(){
+        $('.burger-box').toggleClass('is-active');
+        $('.menu').toggleClass('visible');
+    });
+</script>
